@@ -27,7 +27,7 @@ namespace Repeat
 
             // Создание обычного массива
             int[] a = {4,7,1,47,98};
-            //
+            
             PrintArray(a);
         }
 
