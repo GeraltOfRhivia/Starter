@@ -24,6 +24,11 @@ namespace Repeat
             //Scanner();
             //SumNumber(5, 78);
             //GoTo();
+
+            // Создание обычного массива
+            int[] a = {4,7,1,47,98};
+
+            PrintArray(a);
         }
 
 
@@ -69,6 +74,15 @@ namespace Repeat
             if (a < 10) goto Label;
 
             Console.WriteLine("Method GoTo end.");
+            Console.ReadKey();
+        }
+        // Вывод обычного массива в консоль
+        static void PrintArray(int[] arr)
+        {
+            for (int i = 0; i < arr.Length; i++)
+            {
+                Console.Write(arr[i] + " ");
+            }
             Console.ReadKey();
         }
     }
