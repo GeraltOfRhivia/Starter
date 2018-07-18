@@ -13,22 +13,31 @@ using System.Threading.Tasks;
 
 #endregion
 
+#region HOTKEY
+    // Ctrl+D           - дублирование строки 
+    // Ctrl+Shift+L     - удаление строки
+    // Alt+(стрелка)    - перемещение строки вверх или вниз
+#endregion
+
 
 namespace Repeat
 {
-    class Program
+    class StartProgram
     {
 
         static void Main(string[] args)
         {
-            //Scanner();
-            //SumNumber(5, 78);
-            //GoTo();
-
             // Создание обычного массива
             int[] a = {4,7,1,47,98};
-            
-            PrintArray(a);
+
+            // Так в консоле отобразится тип массива (неверно)
+            Console.WriteLine(a);
+            // "Нормальный" вывод массива любых обьектов через разделитель
+            Console.WriteLine(String.Join(", ",a));
+
+
+            // Ожидание
+            Console.ReadKey();
         }
 
 
