@@ -6,17 +6,20 @@ using System.Threading.Tasks;
 
 #region README
 
-// В этом решении
-// реализваны некоторые методы
-// для повтора информации 
-// за курс С# Starter
+/* 
+ * В этом решении
+ * реализваны некоторые методы
+ * для повтора информации
+ * за курс С# Starter
+ */
 
 #endregion
 
 #region HOTKEY
-    // Ctrl+D           - дублирование строки 
-    // Ctrl+Shift+L     - удаление строки
-    // Alt+(стрелка)    - перемещение строки вверх или вниз
+// Ctrl + D             - дублирование строки 
+// Ctrl + Shift + L     - удаление строки
+// Alt + (стрелка)      - перемещение строки вверх или вниз
+// Ctrl + M + М         - свернуть область
 #endregion
 
 
@@ -36,14 +39,13 @@ namespace Repeat
             Console.WriteLine(String.Join(", ",a));
 
 
+
             // Ожидание
             Console.ReadKey();
         }
 
 
-        #region МЕТОДЫ
-        // Повтор методов
-        #endregion
+        #region МЕТОДЫ (повтор)
 
         // Метод для ввода информации в консоль
         static void Scanner()
@@ -59,7 +61,13 @@ namespace Repeat
             // Ожидание ввода ключа
             Console.ReadKey();
         }
-        // Метод суммы
+
+        // Для добавления XML-описания метода, нужно поставить перед ним "///"
+        /// <summary>
+        /// Метод для суммирования двух чисел
+        /// </summary>
+        /// <param name="a">Первое число для суммирования</param>
+        /// <param name="b">Второе число для суммирования</param>
         static void SumNumber(int a, int b)
         {
             // Так можно назыать переменную
@@ -70,12 +78,13 @@ namespace Repeat
             Console.WriteLine(@int);
             Console.ReadKey();
         }
+
         // Метод для демонстрации GOTO
         static void GoTo()
         {
             int a = 5;
 
-        Label:
+            Label:
             a++;
             Console.WriteLine(a);
 
@@ -94,6 +103,9 @@ namespace Repeat
             }
             Console.ReadKey();
         }
+
+        #endregion
+        
     }
 
 }
